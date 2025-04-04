@@ -47,6 +47,7 @@ jobs:
         with:
           cmd: build # will run `yarn build:prod` command
 
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -54,7 +55,8 @@ jobs:
         with:
           # Upload entire repository
           path: './build'
-          
+
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
